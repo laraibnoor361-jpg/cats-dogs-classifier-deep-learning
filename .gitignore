@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+
+# Models: ignore everything EXCEPT the final deployed model
+models/*
+!models/.gitkeep
+!models/cats_dogs_model.h5
+!models/cats_dogs_model.keras
+!models/metrics.json
+!models/class_names.json
+!models/training_history.png
+!models/confusion_matrix.png
+*.pkl
+
+
+# Secrets / OS / IDE
+.env
+.streamlit/secrets.toml
+.DS_Store
+.vscode/
+.idea/
